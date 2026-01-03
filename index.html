@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* Fade in */
+.container {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Floating text */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #ffcc70;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 204, 112, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🎉 Happy New Year 2026 🎉</h1>
+  <p>May this year bring happiness, success, and new beginnings.</p>
+  <button onclick="alert('Wish you all the best! ✨')">
+    Click for a wish
+  </button>
+</div>
+
+</body>
+</html>
